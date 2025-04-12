@@ -65,13 +65,11 @@ grep -c "sends packet to node" trace_level_2.txt > results/message_count.txt
 Based on the provided image, the network topology is as follows:
 
 ```
-    1
-0 ----- 1
-| \   / |
-|  3  1 |
-| /   \ |
-2 ----- 3
-    2
+0 --1-- 1
+| \     |
+7   3   1
+|     \ |
+3 --2-- 2
 ```
 
 - **Nodes:** 4 nodes labeled 0, 1, 2, and 3.
